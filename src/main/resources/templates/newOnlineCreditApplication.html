@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title th:remove="all">Template for HTML email with inline image</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    
+    <p>This is notify new Credit Application is pushed by Dealer Track </p>    
+    <p>Credit App ID: <span th:text="${appId}"></span></p>   
+     <p>FullName: <span th:text="${fullName}"></span></p>
+     <p>Type Customer: <span th:text="${typeCustomer}"></span></p>
+     <p>Request Date: <span th:text="${requestedDate}"></span></p>
+           
+    
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title th:remove="all">Template for HTML email with inline image</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    
+    <p> This is notify  Credit Application is Locked by <span th:text="${emailId}"></span> </p>
+    
+    <p>Lender App ID: <span th:text="${applicationId}"></span></p>
+    <p>DealerTrack App ID: <span th:text="${dealerId}"></span></p>
+    <p>Request Date: <span th:text="${receivedDate}"></span></p>
+    <p>Customer Name: <span th:text="${userName}"></span></p>
+    <p>Credit Amount: <span th:text="${creditAmount}"></span></p>
+    <p>Type Customer: <span th:text="${appType}"></span></p>
+    
+  </body>
+</html>

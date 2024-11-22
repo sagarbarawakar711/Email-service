@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title th:remove="all">Template for HTML email with inline image</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+  
+  <p>Dear <span th:text="${fullName}"></span>,</p>
+
+<p>Thank you for allowing Luxury Lease Partners to serve your Auto Leasing needs. As part of our lease approval process, Luxury Lease Partners utilizes a service from Envestnet I Yodlee to verify the bank account information on your lease. When you press 'Continue' below, Envestnet's service will allow you to log into your bank account to verify certain information. LLP will use this information to complete the approval of your application.</p>
+
+<p>During the verification process, please ensure that you select to share the account you will be using to make payments on the lease.</p>
+
+<p>If you have any questions, please feel free to contact your analyst or email <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=credit@luxuryleasepartners.com" target=\"_blank\" >credit@luxuryleasepartners.com</a>. </p>
+
+<p><a th:href="${URL}">Click Here</a>  to proceed with account verification.</p>
+  
+    
+    
+  </body>
+</html>

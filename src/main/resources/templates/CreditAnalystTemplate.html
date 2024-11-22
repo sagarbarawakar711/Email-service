@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title th:remove="all">Template for HTML email with inline image</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    
+    <p>Below are the yodlee bank account details :  </p>
+    
+    <p>AccountId: <span th:text="${accountId}"></span></p>
+   
+    
+     <p>Deal Id: <span th:text="${dealId}"></span></p>
+     <p>invitation Code: <span th:text="${invitationCode}"></span></p>
+      <p>First Name: <span th:text="${firstName}"></span></p>
+       <p>Middle Name: <span th:text="${middleName}"></span></p>
+        <p>Last Name: <span th:text="${lastName}"></span></p>
+         <p>Business Name: <span th:text="${businessName}"></span></p>
+         <p>Customer Email: <span th:text="${customerEmail}"></span></p>
+          <p>Vehicle: <span th:text="${vehicle}"></span></p>
+           <p>VIN: <span th:text="${vin}"></span></p>
+           
+            <p><span th:text="${error}"></span> <span th:text="${errorDesc}"></span></p>
+  </body>
+</html>
